@@ -20,19 +20,48 @@ const Rock = [{
 },{
     id: 204, name: "ROCK 2", description : "See how the crew unleashes itself in Akihabara. If you need an afternoon pick-me-up or just want to put a smile on your face -- just click on play and have a nice day!", price: 10.99, discontinued: false, catagories: "Rock", imageUrl:'../assets/img/WorldOrder.jpeg', audio: '../assets/audio/WORLD ORDER - HAVE A NICE DAY.mp3'
 }]
+const Ninetys = [{
+    id: 300, name: "Ninety 3", description : "See how the crew unleashes itself in Akihabara. If you need an afternoon pick-me-up or just want to put a smile on your face -- just click on play and have a nice day!", price: 10.99, discontinued: false, catagories: "Ninetys", imageUrl:'../assets/img/WorldOrder.jpeg', audio: '../assets/audio/WORLD ORDER - HAVE A NICE DAY.mp3'
+},{
+    id: 301, name: "Ninety 3", description : "See how the crew unleashes itself in Akihabara. If you need an afternoon pick-me-up or just want to put a smile on your face -- just click on play and have a nice day!", price: 10.99, discontinued: false, catagories: "Ninetys", imageUrl:'../assets/img/WorldOrder.jpeg', audio: '../assets/audio/WORLD ORDER - HAVE A NICE DAY.mp3'
+},{
+    id: 302, name: "Ninety 3", description : "See how the crew unleashes itself in Akihabara. If you need an afternoon pick-me-up or just want to put a smile on your face -- just click on play and have a nice day!", price: 10.99, discontinued: false, catagories: "Ninetys", imageUrl:'../assets/img/WorldOrder.jpeg', audio: '../assets/audio/WORLD ORDER - HAVE A NICE DAY.mp3'
+},{
+    id: 303, name: "Ninety 3", description : "See how the crew unleashes itself in Akihabara. If you need an afternoon pick-me-up or just want to put a smile on your face -- just click on play and have a nice day!", price: 10.99, discontinued: false, catagories: "Ninetys", imageUrl:'../assets/img/WorldOrder.jpeg', audio: '../assets/audio/WORLD ORDER - HAVE A NICE DAY.mp3'
+},{
+    id: 304, name: "Ninety 3", description : "See how the crew unleashes itself in Akihabara. If you need an afternoon pick-me-up or just want to put a smile on your face -- just click on play and have a nice day!", price: 10.99, discontinued: false, catagories: "Ninetys", imageUrl:'../assets/img/WorldOrder.jpeg', audio: '../assets/audio/WORLD ORDER - HAVE A NICE DAY.mp3'
+}]
+const Soundtracks = [{
+    id: 400, name: "SoundTrack 4", description : "See how the crew unleashes itself in Akihabara. If you need an afternoon pick-me-up or just want to put a smile on your face -- just click on play and have a nice day!", price: 10.99, discontinued: false, catagories: "Soundtracks", imageUrl:'../assets/img/WorldOrder.jpeg', audio: '../assets/audio/WORLD ORDER - HAVE A NICE DAY.mp3'
+},{
+    id: 401, name: "SoundTrack 4", description : "See how the crew unleashes itself in Akihabara. If you need an afternoon pick-me-up or just want to put a smile on your face -- just click on play and have a nice day!", price: 10.99, discontinued: false, catagories: "Soundtracks", imageUrl:'../assets/img/WorldOrder.jpeg', audio: '../assets/audio/WORLD ORDER - HAVE A NICE DAY.mp3'
+},{
+    id: 402, name: "SoundTrack 4", description : "See how the crew unleashes itself in Akihabara. If you need an afternoon pick-me-up or just want to put a smile on your face -- just click on play and have a nice day!", price: 10.99, discontinued: false, catagories: "Soundtracks", imageUrl:'../assets/img/WorldOrder.jpeg', audio: '../assets/audio/WORLD ORDER - HAVE A NICE DAY.mp3'
+},{
+    id: 403, name: "SoundTrack 4", description : "See how the crew unleashes itself in Akihabara. If you need an afternoon pick-me-up or just want to put a smile on your face -- just click on play and have a nice day!", price: 10.99, discontinued: false, catagories: "Soundtracks", imageUrl:'../assets/img/WorldOrder.jpeg', audio: '../assets/audio/WORLD ORDER - HAVE A NICE DAY.mp3'
+},{
+    id: 404, name: "SoundTrack 4", description : "See how the crew unleashes itself in Akihabara. If you need an afternoon pick-me-up or just want to put a smile on your face -- just click on play and have a nice day!", price: 10.99, discontinued: false, catagories: "Soundtracks", imageUrl:'../assets/img/WorldOrder.jpeg', audio: '../assets/audio/WORLD ORDER - HAVE A NICE DAY.mp3'
+}]
 
 let PopAppend = false;
 let RockAppend = false;
+let NinetysAppend = false;
+let SoundtracksAppend = false;
 
 function createProductCard(product) {
     let Arr;
     // Create a <div> to hold the card
     if(product === Pop[0].catagories && PopAppend === false){
         Arr = Pop;
-
     }else if(product === Rock[0].catagories && RockAppend === false){
         Arr = Rock;
+    }else if(product === Ninetys[0].catagories && NinetysAppend === false){
+        Arr = Ninetys;
+    }else if(product === Soundtracks[0].catagories && SoundtracksAppend === false){
+        Arr = Soundtracks;
     }
+
+
 
     if(Arr !== undefined){
         for(let i = 0; i < Arr.length; i++){
@@ -74,6 +103,10 @@ function createProductCard(product) {
                 document.getElementById('category-Pop').appendChild(card);
             }else if(product === Rock[0].catagories && RockAppend === false){
                 document.getElementById('category-Rock').appendChild(card);
+            }else if(product === Ninetys[0].catagories && NinetysAppend === false){
+                document.getElementById('category-90s').appendChild(card);
+            }else if(product === Soundtracks[0].catagories && SoundtracksAppend === false){
+                document.getElementById('category-Soundtracks').appendChild(card);
             }
         }
     }
@@ -82,6 +115,10 @@ function createProductCard(product) {
        PopAppend = true;
     }else if(product === Rock[0].catagories && RockAppend === false){
         RockAppend = true;
+    }else if(product === Ninetys[0].catagories && NinetysAppend === false){
+        NinetysAppend = true;
+    }else if(product === Soundtracks[0].catagories && SoundtracksAppend === false){
+        SoundtracksAppend = true;
     }
 
 

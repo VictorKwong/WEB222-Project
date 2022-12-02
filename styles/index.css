@@ -65,6 +65,7 @@ nav>ul>li>a:hover{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 /* Card */
 .card {
@@ -85,7 +86,9 @@ nav>ul>li>a:hover{
 
 /* BoxSection */
 #category-Pop,
-#category-Rock{
+#category-Rock,
+#category-90s,
+#category-Soundtracks{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
     grid-gap: 20px;
