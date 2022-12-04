@@ -3,3 +3,14 @@ https://www.freecodecamp.org/news/how-to-keep-your-footer-where-it-belongs-59c6a
 
 Spotify Web:
 https://www.spotify.com/ca-en/free/
+
+     <article class="card">
+        <header>
+            <h2>A short heading</h2>
+        </header>    
+        <img src="balloons2.jpg" alt="Hot air balloons">
+        <div class="content">
+            <p>Short content.</p>
+        </div>
+        <footer>I have a footer!</footer>
+    </article>
