@@ -66,6 +66,13 @@ nav>ul>li>a:hover{
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    width:80%;
+    margin: 0 auto;
+}
+
+#catagoryItems{
+    padding: 30px 17px 30px;
+    font-size: 30px;
 }
 /* Card */
 .card {
