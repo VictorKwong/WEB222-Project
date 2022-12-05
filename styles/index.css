@@ -103,6 +103,8 @@ nav>ul>li>a:hover{
 
 .card-title{
     margin-bottom: 10px;
+    font-size: 23px;
+    width: 260px;
 }
 .card-image {
     object-fit: cover;
