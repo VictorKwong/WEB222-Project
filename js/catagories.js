@@ -28,5 +28,5 @@ mySoundtracksFn = () => {
 }
 
 myResetFn = () => {
-    document.getElementById('category-Main').style.display = 'initial';
+    console.log('test');
 }
