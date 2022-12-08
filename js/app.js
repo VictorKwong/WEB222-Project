@@ -89,5 +89,5 @@ homeBackgroundImageChange = () => {
  }
 
 window.onload = function () {
-    homeBackgroundImageChange();
+    // homeBackgroundImageChange();
 }
