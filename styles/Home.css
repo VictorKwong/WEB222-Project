@@ -1,67 +1,4 @@
-html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
-
-.clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }
-
-html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
-
-*, *:before, *:after {box-sizing: inherit}
-
-.sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
-
-body,
-h1,
-h2,
-h3,
-p,
-a,
-fieldset,
-button,
-figcaption,
-ul{
-  margin: 0;
-  padding: 0;
-  font-family: 'Kanit', sans-serif;
-}
-
-.wrapper {
-    max-width: 1100px;
-    width: 90%;
-    margin: 0 auto;
-}
-
-/* Header */
-header{
-    background-color: #000;
-    color: whitesmoke;
-    display: flex;
-    justify-content: space-between;
-}
-header>h2{
-    margin-top: 20px;
-    display: inline-block;
-    margin-left: 10px;
-}
-
-/* Nav Bar */
-nav>ul{
-    display: flex;
-}
-nav>ul>li{
-    list-style-type: none;
-    padding: 30px 0 30px;
-
-}
-nav>ul>li>a{
-    text-decoration: none;
-    color: whitesmoke;
-    padding: 30px 17px 30px;
-    
-}
-
-nav>ul>li>a:hover{
-    color: #1ed760;
-}
-
+@import "style.css";
 /* background-logo */
 .background-Box{
     position: relative;
@@ -70,6 +7,9 @@ nav>ul>li>a:hover{
 }
 .backgroundOne-logo{
     background-image: url('../assets/img/Home.jpg');
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-color: #000;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -83,7 +23,8 @@ nav>ul>li>a:hover{
     width: 100%; 
     height: 15%;
     font-weight: bolder;
-    line-height: 100px;
+    display: flex;
+    align-items:flex-end;
     padding-left: 60px;
     font-size: 18px;
 }
@@ -95,12 +36,52 @@ nav>ul>li>a:hover{
     width: 100%; 
     height: 85%;
     font-weight: bolder;
-    line-height: 20px;
-    padding-left: 90px;
+    line-height: 120px;
+    padding-left: 100px;
     font-size: 15px;
+}
+.background-button-Box{
+    position: absolute;
+    bottom: 180px;
+    left: 80px;
+    z-index: 1;
+    cursor: pointer;
+    user-select:none;
+    text-decoration: none;
+}
+.background-button{
+    background-color: rgb(29, 29, 29);
+    color: whitesmoke;
+    padding: 10px 20px 10px;
+    font-size: 20px;
+    border-radius: 25px;
+    transition: all 0.1s ease-out;
+}
+.background-button:hover{
+    background-color: rgb(8, 8, 8);
+    transform: scale(1.05);
+}
+.background-button:active::before,
+.background-button:focus::before{
+    content: '';
+    position: absolute;
+    width: calc(100% + 6px);
+    height: calc(100% + 6px);
+    top: -3px;
+    left: -3px;
+    border-radius: 25px;
+    border: 1px solid white;
+}
+
+.background-button:active{
+    background-color: black;
+    transform: scale(1);
 }
 .backgroundTwo-logo{
     background-image: url('../assets/img/HomeTwo.jpg');
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-color: #000;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -115,7 +96,8 @@ nav>ul>li>a:hover{
     width: 100%; 
     height: 35%;
     font-weight: bolder;
-    line-height: 350px;
+    display: flex;
+    align-items:flex-end;
     padding-left: 330px;
     font-size: 23px;
 }
@@ -127,7 +109,7 @@ nav>ul>li>a:hover{
     width: 100%; 
     height: 65%;
     font-weight: bolder;
-    line-height: 100px;
+    line-height: 90px;
     padding-left: 380px;
     font-size: 20px;
 }
@@ -135,7 +117,7 @@ nav>ul>li>a:hover{
     background-image: url('../assets/img/HomeThree.jpg');
     background-position: center;
     background-repeat: no-repeat; 
-    background-size: cover;
+    background-color: #000;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -150,7 +132,8 @@ nav>ul>li>a:hover{
     width: 100%; 
     height: 35%;
     font-weight: bolder;
-    line-height: 350px;
+    display: flex;
+    align-items:flex-end;
     padding-left: 600px;
     font-size: 23px;
 }
@@ -162,7 +145,7 @@ nav>ul>li>a:hover{
     width: 100%; 
     height: 65%;
     font-weight: bolder;
-    line-height: 20px;
+    line-height: 80px;
     padding-left: 850px;
     font-size: 20px;
 }
@@ -173,20 +156,112 @@ nav>ul>li>a:hover{
     top: 0;
     mix-blend-mode:multiply;
 }
-/* Footer */
-#page-container {
-    position: relative;
-    min-height: 100vh;
+
+/* list */
+.background-list-albums{
+    max-width:1100px;
+    color:#191919;
+    background-color: #EFEFEF;
 }
-  
-#content-wrap {
-    padding-bottom: 2.5rem;    /* Footer height */
-}
-  
-footer {
+
+.background-list-albums>h3{
+    font-size: 30px;
     text-align: center;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 2.5rem;            /* Footer height */
+    padding: 20px 0 50px;
+}
+
+.background-list-Box{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.background-listOne{
+    background-image: url('../assets/img/Home/PlayAnySong.jpg');
+    background-size: cover;
+    display:block;
+    margin:0 auto 40px;
+    width:120px;
+    height:120px;
+}
+.background-listTwo{
+    background-image: url('../assets/img/Home/DownloadMusic.jpg');
+    background-size: cover;
+    display:block;
+    margin:0 auto 40px;
+    width:120px;
+    height:120px;
+}
+.background-listThree{
+    background-image: url('../assets/img/Home/AlbumMember.jpg');
+    background-size: cover;
+    display:block;
+    margin:0 auto 40px;
+    width:120px;
+    height:120px;
+}
+
+.background-list-AllItem{
+    display: block;
+    text-align: center;
+}
+
+.background-listTitle{
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 21px;
+    padding: 0px
+}
+.background-listDescription{
+    font-size: 16px;
+    padding: 0px;
+}
+
+li{
+    list-style-type: none;
+}
+
+@media (max-width: 468px){
+    
+    /* Main */
+    .backgroundOne-logo,
+    .backgroundTwo-logo,
+    .backgroundThree-logo{
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .backgroundOne-textOne,
+    .backgroundTwo-textOne,
+    .backgroundThree-textOne
+    {
+        height:50%;
+        align-items: initial;
+        line-height: 550px;
+        padding-left: 30px;
+    }
+    .backgroundOne-textTwo,
+    .backgroundTwo-textTwo,
+    .backgroundThree-textTwo{
+        height:50%;
+        line-height: 20px;
+        padding-left: 50px;
+    }
+    .background-button-Box{
+        transform: translate(-50%, -35%);
+        left: 50%;
+        bottom: 35%;
+        
+    }
+    .background-button{
+        font-size: 15px;
+    }
+    /* Box listing */
+    .background-list-Box{
+        display: initial;
+    }
+    .background-list-Box>li{
+        padding-bottom: 30px;
+    }
 }

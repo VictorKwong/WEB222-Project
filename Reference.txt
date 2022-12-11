@@ -14,3 +14,6 @@ https://www.spotify.com/ca-en/free/
         </div>
         <footer>I have a footer!</footer>
     </article>
+
+Image:
+https://www.flaticon.com/free-icon/music-album_9126843
