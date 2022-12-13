@@ -1,5 +1,8 @@
 @import "style.css";
   /* Form */
+main{
+    padding-top: 100px;
+}
 form>h1{
     padding-bottom: 20px;
 }

@@ -56,13 +56,22 @@ body {
 
 /* Header */
 header{
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: 99999;
+    height:100px;
+    width: 100%;
+}
+.header-box{
     background-color: #000;
     color: whitesmoke;
     display: flex;
     justify-content: space-between;
     padding-bottom: 20px;
+    height:100px;
 }
-header>a>h2{
+.header-box>a>h2{
     margin-top: 20px;
     display: inline-block;
     margin-left: 30px;
@@ -93,21 +102,21 @@ header>a>h2{
     top:-1000%;
 }
 /* Nav Bar */
-header>ul{
+.header-box>ul{
     display: flex;
 }
-header>ul>li{
+.header-box>ul>li{
     padding: 30px 0 30px;
 
 }
-header>ul>li>a{
+.header-box>ul>li>a{
     text-decoration: none;
     color: whitesmoke;
     padding: 30px 17px 30px;
     cursor: pointer;
 }
 
-header>ul>li>a:hover{
+.header-box>ul>li>a:hover{
     color: #1ed760;
 }
 
@@ -225,12 +234,12 @@ footer>div>p{
         display: initial;
         z-index: 200;
     }
-    header{
+    .header-box{
         display: block;
         position: relative;
         padding-bottom: 20px;
     }
-    header>label {
+    .header-box>label {
         position:absolute;
         top:11px;
         right:11px;
@@ -260,17 +269,17 @@ footer>div>p{
     #click_id:checked + .slide-menu{
         right:0;
     }
-    header>ul>li{
+    .header-box>ul>li{
         padding: initial;
     }
-    header>ul>li>a{
+    .header-box>ul>li>a{
         display: block;
         width: 100%;
         padding: 20px 10px 20px;
         text-align: center;
     }
     /* Logo */
-    header>a>h2{
+    .header-box>a>h2{
         margin-left:10px;
     }
     /* Main */

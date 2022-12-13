@@ -1,4 +1,7 @@
 @import "style.css";
+main{
+    padding-top: 100px;
+}
 
 #result-form{
     height: 700px;

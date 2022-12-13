@@ -1,5 +1,8 @@
 @import "style.css";
 /* background-logo */
+main{
+    padding-top: 100px;
+}
 .background-Box{
     position: relative;
     max-width: 1100px; 

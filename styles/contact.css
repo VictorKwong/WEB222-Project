@@ -1,5 +1,8 @@
 @import "style.css";
 /* UserSelection */
+main{
+    padding-top: 100px;
+}
 header ul{
     margin-bottom: 0 !important;
 }
